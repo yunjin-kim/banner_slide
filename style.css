@@ -1,0 +1,16 @@
+section {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  width: 80px;
+  height: 80px;
+}
+.banner_slide {
+  width: 564px;
+  height: 1002px;
+  border: 1px solid black;
+}
