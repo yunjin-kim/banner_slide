@@ -18,17 +18,20 @@ console.log(image)
 let num = 0;
 $rightBtn.addEventListener('click', ()=>{
   if(num > image.length-2) num = 0;
-  console.log('aa');
   $banner.innerHTML = "<img src='" + `../img/${12+ num}.jpg` + "'>"
   num++;
 })
 
 $leftBtn.addEventListener('click', ()=>{
   if(num > image.length-1) num = 0;
-  console.log('aa');
   $banner.innerHTML = "<img src='" + `../img/${14 - num}.jpg` + "'>"
   num++;
 })
 
 
 //자동으로 넘어가는거
+setInterval(()=>{
+  if(num > image.length-2) num = 0;
+  $banner.innerHTML = "<img src='" + `../img/${12+ num}.jpg` + "'>"
+  num++;
+}, 4000)
